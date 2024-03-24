@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    color: #000; /* Set text color to black */
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 48px;
+    left: 0;
+    background-color: #fff; /* Set background color to white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow to the sidebar */
+}
+
+.sidebar-header {
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px 20px;
+    border: 1px solid transparent; /* Add border to all list items */
+}
+
+/* Remove border for last list item */
+.sidebar-menu li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-menu li a {
+    color: #000; /* Set text color to black */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.sidebar-menu li a i {
+    margin-right: 10px;
+}
+
+/* Hover effect to change text color to grey */
+.sidebar-menu li:hover {
+    background-color: #ccc;
+}
+
+/* Background color blue for "New Video" list item */
+.sidebar-menu li.new-video {
+    background-color: rgb(5, 124, 156);
+}
+
+.content {
+    margin-left: 250px; /* Same width as sidebar */
+    padding: 20px;
+    padding-left: 270px; /* Add additional padding to content to accommodate sidebar */
+}
+
+
+
+.search-bar,
+.buttons {
+    position: fixed;
+    top: 55px; /* Adjust the top position to match the top position of the sidebar */
+    right: 0; /* Position search bar and buttons to the right side */
+    z-index: 1; /* Set z-index to make sure they appear above the sidebar */
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.buttons button {
+    margin-left: 10px;
+}
